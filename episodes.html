@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Solid TV – Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showPlaylist(id) {
+            var playlists = document.getElementsByClassName('playlist');
+            for (var i = 0; i < playlists.length; i++) {
+                playlists[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Rock Solid TV – Watch Episodes</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Select a Series</h2>
+        <select onchange="showPlaylist(this.value)">
+            <option value="bible">The Bible They Don’t Teach in Sunday School</option>
+            <option value="history">History They Don’t Teach in School</option>
+            <option value="redpills">Red Pills – Eye-Opening Truths</option>
+        </select>
+
+        <div id="bible" class="playlist" style="display:block; margin-top:20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9gfO4h4ufi1gRolKEqtMB2o" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="history" class="playlist" style="display:none; margin-top:20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9hvOz3Xl3vJBpM5tjOFwgJS" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="redpills" class="playlist" style="display:none; margin-top:20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9h5wu9lZsNyV1HLZT474yB2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+</body>
+</html>
