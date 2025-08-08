@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook – Rock Solid TV</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Guestbook</h1>
+        <p>Leave a message for Rock Solid TV. Speak truth, share support, or just say hello.</p>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <main>
+        <section>
+            <form id="guestbook-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="guestbook-entries">
+            <h2>Messages from the Rock Solid Community</h2>
+            <ul id="entries-list">
+                <!-- Entries will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const form = document.getElementById('guestbook-form');
+        const entriesList = document.getElementById('entries-list');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name && message) {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${name}</strong>: ${message}`;
+                entriesList.prepend(li);
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>
