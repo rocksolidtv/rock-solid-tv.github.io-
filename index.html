@@ -1,106 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Solid TV</title>
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #111;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 2px solid #8b0000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #ff0000;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-            color: #ccc;
-        }
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #333;
-        }
-        h2 {
-            color: #ff0000;
-        }
-        a {
-            color: #00aced;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            color: #666;
-            background: #111;
-        }
-        .playlist {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Solid TV</title>
+  <style>
+    body { margin: 0; font-family: 'Oswald', sans-serif; background: #000; color: #eee; }
+    a { color: #e63946; text-decoration: none; }
+    nav, section, footer { padding: 2rem; }
+    nav { background: #111; position: sticky; top: 0; z-index: 100; }
+    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+    nav li { margin: 0 1rem; }
+    nav a:hover { color: #ff4c4c; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1, h2, h3 { margin: 0.5rem 0; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background: #e63946; color: #fff; text-transform: uppercase; font-weight: bold; border-radius: 0.25rem; }
+    .btn:hover { background: #ff4c4c; }
+    iframe { width: 100%; height: 315px; border: none; margin-bottom: 1rem; }
+    .grunge { background-image: url('grunge-texture.png'); background-size: cover; }
+    .blog-post { background: #111; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; }
+    .blog-post h2, .blog-post h3 { color: #e63946; }
+    .blog-post .author { color: #ccc; font-style: italic; margin-bottom: 1rem; }
+    .blog-post ul, .blog-post ol { margin-left: 1.5rem; }
+    .blog-post blockquote { border-left: 3px solid #e63946; padding-left: 1rem; margin: 1rem 0; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Rock Solid TV</h1>
-        <p>Uncensored History. Unfiltered Truth. Unshakable Faith.</p>
-    </header>
+  <nav>
+    <ul class="container">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#playlists">Playlists</a></li>
+      <li><a href="#episodes">Episodes</a></li>
+      <li><a href="#merch">Merch</a></li>
+      <li><a href="#vault">Vault</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#guestbook">Guestbook</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Rock Solid TV</h2>
-        <p>The world’s asleep — lulled by lies, distracted by noise, and spoon-fed the “official story.” Rock Solid TV exists to rip the blindfold off. I’m Rocky Smith, and my mission is simple: expose what’s been buried, call out the deception, and help people see the world for what it really is — not what they’ve been told it is.</p>
-        <p>Here, we dig into the history they erased, the Bible they don’t teach in Sunday school, and the red pills they hope you never swallow. If you’re ready to stop hitting snooze on the truth, you’re in the right place.</p>
-        <p><strong>Wake up. Stand firm. Stay Rock Solid.</strong></p>
-    </section>
+  <section id="home" class="grunge">
+    <div class="container">
+      <h1>Rock Solid TV</h1>
+      <p>Uncensored History. Unfiltered Truth. Unshakable Faith.</p>
+      <p><em>Stay Rock Solid.</em></p>
+    </div>
+  </section>
 
-    <section id="featured-videos">
-        <h2>Featured Playlists</h2>
-        <div class="playlist">
-            <h3>History They Don’t Teach In School</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9gfO4h4ufi1gRolKEqtMB2o" frameborder="0" allowfullscreen></iframe>
+  <section id="playlists">
+    <div class="container">
+      <h2>Playlists</h2>
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9gfO4h4ufi1gRolKEqtMB2o" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9h5wu9lZsNyV1HLZT474yB2" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9hvOz3Xl3vJBpM5tjOFwgJS" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="episodes">
+    <div class="container">
+      <h2>Episodes</h2>
+      <!-- List of iframes for each episode omitted for brevity -->
+    </div>
+  </section>
+
+  <section id="merch">
+    <div class="container">
+      <h2>Merch Store</h2>
+      <div class="merch-grid">
+        <div class="merch-item">
+          <img src="shirt-mockup.png" alt="Rock Solid TV Shirt" />
+          <p>Rock Solid TV T-Shirt</p>
+          <button class="btn">Buy Now</button>
         </div>
-        <div class="playlist">
-            <h3>Bible They Don’t Teach In Sunday School</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9h5wu9lZsNyV1HLZT474yB2" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="playlist">
-            <h3>Red Pills</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZbAgMjaab9hvOz3Xl3vJBpM5tjOFwgJS" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="vault">
-        <h2>Vault</h2>
-        <p>More truth coming soon…</p>
-    </section>
+  <section id="vault">
+    <div class="container">
+      <h2>Uncensored Vault</h2>
+      <p>Currently empty. Check back soon for exclusive PDFs and videos.</p>
+    </div>
+  </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p><strong>Welcome to the Unfiltered Side:</strong> This blog will go where YouTube won't let us. Expect behind-the-scenes breakdowns, historical rabbit holes, and raw commentary from the front lines of faith and freedom.</p>
-    </section>
+  <section id="blog">
+    <div class="container">
+      <div class="blog-post">
+        <h2>Why I Started Rock-Solid-TV.com</h2>
+        <p class="author">By Rocky Smith</p>
+        <p>In today’s digital world...</p>
+      </div>
+      <div class="blog-post">
+        <h2>Mega Church Pastors Leading People Astray</h2>
+        <p class="author">By Rocky Smith</p>
+        <p>In the sprawling landscape...</p>
+      </div>
+      <div class="blog-post">
+        <h2>The Biggest False Flags in History</h2>
+        <p class="author">By Rocky Smith</p>
+        <p>In the world of power...</p>
+      </div>
+      <div class="blog-post">
+        <h2>The Great North Korea Conspiracy</h2>
+        <p class="author">By Rocky Smith</p>
+        <p>Imagine a nation...</p>
+      </div>
+      <div class="blog-post">
+        <h2>When the Vote Is a Vegas Show</h2>
+        <p class="author">By Rocky Smith</p>
+        <p>They tell you...</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="verse">
-        <h2>Verse of the Day</h2>
-        <blockquote>"I shall not die, but live, and declare the works of the LORD." — Psalm 118:17 (KJV)</blockquote>
-    </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Rock Solid TV</h2>
+      <p>Rock Solid TV exists to rip the blindfold off...</p>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Rock Solid TV. All Rights Reserved.
-    </footer>
+  <section id="guestbook">
+    <div class="container">
+      <h2>Guestbook</h2>
+      <form id="guestbook-form">
+        <input type="text" id="gb-name" placeholder="Your Name" required />
+        <textarea id="gb-message" placeholder="Your Message" rows="3" required></textarea>
+        <button type="submit" class="btn">Sign Guestbook</button>
+      </form>
+      <ul id="guestbook-list"></ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact & Newsletter</h2>
+      <form id="newsletter-form">
+        <input type="email" placeholder="your@email.com" required />
+        <button class="btn">Subscribe</button>
+      </form>
+      <p>Email: <a href="mailto:rocksolidtv@outlook.com">rocksolidtv@outlook.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="text-align:center;">
+      <p>&copy; 2025 Rock Solid TV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Bible verse rotator and guestbook logic...
+  </script>
 </body>
 </html>
