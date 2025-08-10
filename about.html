@@ -5,25 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rock Solid TV - About</title>
   <style>
-    body { margin:0; font-family:'Oswald',sans-serif; background:#000; color:#eee; }
-    .container { max-width:800px; margin:2rem auto; padding:1rem; }
-    h2 { color:#e63946; }
-    p, ul { margin-bottom:1rem; }
-    ul { margin-left:1.5rem; list-style: disc; }
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background: #000;
+      color: #eee;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Torn paper background effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/8Y5V8Lq/torn-paper-dark.png') repeat;
+      background-size: cover;
+      opacity: 0.18; /* Adjust intensity */
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 1.5rem;
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.7); /* subtle backdrop for text */
+      border-radius: 6px;
+    }
+
+    h2 {
+      color: #e63946;
+      text-transform: uppercase;
+      border-bottom: 2px solid #e63946;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #e63946;
+      margin-top: 2rem;
+    }
+
+    p, ul {
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    em {
+      color: #e63946;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>About Rock Solid TV</h2>
-    <p>Hello, I’m <strong>Rocky Smith</strong>, the voice and vision behind <em>Rock Solid TV</em>. For years, I've journeyed into hidden histories, unmasked cover-ups, and examined biblical truths with unblinking honesty. This platform is my pledge: to tear down the veils of deception and offer you a sanctuary where truth reigns, not corporate interests or mainstream agendas.</p>
-    <p>Here’s what you can expect:</p>
+    <p><strong>Uncensored History. Unfiltered Truth. Unshakable Faith.</strong></p>
+    <p>The world you’ve been taught to trust is a manufactured illusion — built on <strong>propaganda, historical cover-ups, and watered-down faith</strong>. Politicians act like performers, reading lines. The <strong>mainstream media</strong> spins the narrative. Many modern churches avoid the <strong>Bible verses</strong> that would shatter the system’s comfort zone.</p>
+    <p><strong>That ends here.</strong></p>
+    <p>I’m <strong>Rocky Smith</strong>, founder of <em>Rock Solid TV</em>, and I don’t play by their rules. This isn’t your Sunday morning sermon or your high school history class. Here, we rip open the past, drag the skeletons into the light, and uncover the <strong>hidden history</strong> and <strong>Bible truths</strong> they never wanted you to know.</p>
+
+    <h3>What We Cover</h3>
     <ul>
-      <li><strong>Raw Investigation</strong> into history’s greatest cover-ups—from ancient mysteries to modern conspiracies.</li>
-      <li><strong>Uncompromised Scripture</strong>: deep dives into the KJV, pipelines you won’t hear in Sunday school.</li>
-      <li><strong>Critical Skepticism</strong>: questioning every narrative, demanding evidence, and refusing to settle for half-truths.</li>
-      <li><strong>Community Driven</strong>: your voices and guestbook entries shape our collective quest for knowledge.</li>
+      <li><strong>Hidden history</strong> they erased from school books</li>
+      <li><strong>Bible prophecy</strong> and unfolding end-times events</li>
+      <li><strong>Government and media manipulation</strong> exposed</li>
+      <li><strong>Suppressed truths</strong> about religion, science, and politics</li>
+      <li>Real examples of <strong>false flag events</strong> and elite deception</li>
     </ul>
-    <p>At Rock Solid TV, we don’t just talk about truth—we live it. Join me as we chart the uncharted, challenge the unquestioned, and stand unshakable against the tides of spin.</p>
+
+    <h3>Our Mission</h3>
+    <p>To <strong>expose lies, defend truth, and stand on unshakable faith</strong>. Around here, we don’t tiptoe around “controversial” — we charge straight into it. If it’s true, we’ll say it. If it’s hidden, we’ll uncover it. If it’s biblical, we’ll prove it from the <strong>King James Bible</strong>.</p>
+    <p>We’re not here to make you comfortable. We’re here to make you think.</p>
+
+    <h3>Why It Matters</h3>
+    <p>The <strong>official story</strong> is a lie. The history books have been rewritten. The church has gone soft. And the clock is ticking. If you’re tired of <strong>fake news</strong>, <strong>political theater</strong>, and <strong>lukewarm faith</strong>, you’ve found your home.</p>
+    <p>The truth doesn’t need permission to be told — but it does need a place where it can’t be silenced. That’s why Rock Solid TV exists.</p>
+
+    <p><strong>If you’re ready to question everything and see the world as it really is — welcome home. The red pill’s on the table.</strong></p>
   </div>
 </body>
 </html>
