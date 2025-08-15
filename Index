@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Solid TV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      background: #b30000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #b30000;
+      padding-bottom: 10px;
+    }
+    a {
+      color: #ff6666;
+      text-decoration: none;
+    }
+    .guestbook-entry {
+      background: #222;
+      padding: 10px;
+      margin-top: 10px;
+      border-left: 4px solid #b30000;
+    }
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+    }
+    button {
+      background-color: #b30000;
+      cursor: pointer;
+    }
+    .vault a {
+      display: block;
+      margin-bottom: 10px;
+      color: #a0d8ef;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rock Solid TV</h1>
+    <p>Uncensored History. Unfiltered Truth. Unshakable Faith.</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I’m Rocky Smith, founder of Rock Solid TV. I expose the hidden history, suppressed Bible truths, and red pills they don't want you to see. If you're tired of sugar-coated sermons and fake news, you're in the right place.</p>
+  </section>
+
+  <section>
+    <h2>Episodes</h2>
+    <p>🎥 Watch all my uncensored episodes on YouTube:</p>
+    <a href="https://youtube.com/@rock-solid-tv" target="_blank">👉 Rock Solid TV YouTube Channel</a>
+  </section>
+
+  <section>
+    <h2>Guest Book</h2>
+    <form id="guestForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Sign Guest Book</button>
+    </form>
+    <div id="guestbookEntries"></div>
+  </section>
+
+  <section>
+    <h2>Bible Verse of the Day (KJV)</h2>
+    <p id="bibleVerse">Loading...</p>
+  </section>
+
+  <section class="vault">
+    <h2>The Vault (Free Downloads)</h2>
+    <p>🔓 These are the files they don’t want you to read. Click to download:</p>
+    <a href="vault/file1.pdf" download>📄 The Real History of America</a>
+    <a href="vault/file2.pdf" download>📄 The Book of Enoch (Restored KJV)</a>
+    <!-- Add more <a> tags as needed -->
+  </section>
+
+  <footer>
+    &copy; 2025 Rock Solid TV. Stay bold, stay biblical, stay Rock Solid.
+  </footer>
+
+  <script>
+    const verses = [
+      "Proverbs 3:5 - Trust in the LORD with all thine heart; and lean not unto thine own understanding.",
+      "Isaiah 5:20 - Woe unto them that call evil good, and good evil...",
+      "Revelation 3:16 - So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.",
+      "Ephesians 6:12 - For we wrestle not against flesh and blood...",
+      "2 Timothy 3:1 - This know also, that in the last days perilous times shall come.",
+      "John 8:32 - And ye shall know the truth, and the truth shall make you free.",
+      "Romans 8:31 - If God be for us, who can be against us?"
+    ];
+    document.getElementById("bibleVerse").innerText =
+      verses[Math.floor(Math.random() * verses.length)];
+
+    document.getElementById("guestForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (name && message) {
+        const entry = document.createElement("div");
+        entry.classList.add("guestbook-entry");
+        entry.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+        document.getElementById("guestbookEntries").prepend(entry);
+        this.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
